@@ -1,88 +1,28 @@
-body{
-    background-image: url("dark_bg.jpg");
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iChat</title>
+        <link rel = "icon" href = "chat.png" type = "image/x-icon">
+        <script defer src="http://localhost:5500/socket.io/socket.io.js"></script>
+        <script defer src="client.js"></script>
+        <link rel= "stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="chat.png">
+            <h1>Welcome to iChat</h1>
+        </nav>
+        <div class="container">
 
-nav{
-    /* height: 10px; */
-    color: rgb(11, 3, 39);
-    padding: 34px;
-
-}
-
-
-
-.logo{
-    width: 50px;
-    height: 40px;
-    align-self: right;
-
-}
-
-.container{
-    background-color: rgb(105, 101, 101);
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 10px;
-    height: 60vh;
-    width: 80%;
-    padding: 32px;
-    border: 2px solid black;
-    border-radius: 10px;
-    overflow-y: scroll;
-    margin-bottom: 22px;
-    overflow-y: auto;
-    display: block;
-    margin: auto;
-    
-}
-
-
-
-.message{
-    background-color: rgb(32, 190, 218);
-    width: 40%;
-    padding: 10px;
-    margin: 17px 3px;
-    border: 2px solid black;
-    border-radius: 10px;
-    
-}
-.right{
-    float: right;
-    clear: both;
-}
-.left{
-    float: left;
-    clear: both;
-}
-
-#send-container{
-    
-    display: block;
-    margin: auto;
-    max-width : 985px;
-    text-align: center;
-    height: 50px;
-    width: 100%;
-}
-
-.btn-btn-primary{
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 6px;
-    height:34px;
-}
-
-#message_input{
-    background-color: rgb(221, 240, 114);
-    width: 100%;
-    height: 34px;
-    margin-left: 2px;
-    margin-right: 2px;
-    /* margin-top: 10px; */
-    padding-left: 10px;
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 4px;
-
-}
+        </div>
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="message_input" id="message_input">
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+        </div>
+    </body>
+</html>
